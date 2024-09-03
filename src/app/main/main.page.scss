@@ -1,0 +1,51 @@
+.background-image {
+  --background: url('/assets/img/fondos/fondo2.jfif') no-repeat center center / cover;
+ 
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  color: white; 
+  padding: 20px;
+}
+
+ion-toolbar{
+  --background: transparent;
+  padding:10px;
+  
+  
+  
+}
+
+ion-card,ion-card-title,ion-card-subtitle{
+  --background:transparent;
+  color: white;
+  
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  
+  
+}
+
+
+ion-searchbar{
+  margin-top: 50px;
+}
+
+.drk{
+  --background:transparent;
+  --color: black;
+}
+
+.archivo{
+  margin-left: 300px;
+  margin-bottom:40px;
+  --background:transparent;
+}

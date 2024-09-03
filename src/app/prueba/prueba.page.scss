@@ -1,0 +1,62 @@
+.background-image {
+    --background: url('/assets/img/fondos/Login.jfif') no-repeat center center / cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .content {
+    text-align: center;
+    color: white; 
+    padding: 20px;
+  }
+  
+  ion-item {
+    --background: transparent; 
+    --border-color: transparent; 
+  }
+  
+  ion-input {
+    --background: transparent; 
+    --color: white; 
+  }
+  
+  ion-list {
+    --ion-background-color: transparent; 
+  }
+
+  ion-checkbox{
+    margin-top: 30px;
+    color:white;
+    border-color: transparent;
+    
+  }
+
+  .custom-hover {
+    margin-left: 35%;
+    margin-top: 35px;
+    border-radius: 5px;
+    --background: transparent; /* Transparente por defecto */
+    --border-color: black; /* Color del borde */
+    --color: white; 
+  }
+  
+  .iniciar{
+    margin-left: 34%;
+    margin-top: 10px;
+    border-radius: 5px;
+    --background: transparent; /* Transparente por defecto */
+    --border-color: black; /* Color del borde */
+    --color: white; 
+  }
+  
+  ion-list{
+    margin-top:25%;
+  }
+ 
+  ion-toolbar{
+    --background: transparent;
+  }
+
+  .back{
+    --background: transparent;
+  }

@@ -5,23 +5,24 @@ import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-prueba',
+  templateUrl: './prueba.page.html',
+  styleUrls: ['./prueba.page.scss'],
   standalone: true,
-  imports: [IonicModule,RouterLink,CommonModule, FormsModule]
+  imports: [CommonModule, FormsModule, RouterLink, IonicModule]
 })
-export class LoginPage implements OnInit {
+export class PruebaPage implements OnInit {
 
- 
+  nombre: string = '';
+  apellido: string = '';
   email: string = '';
   password: string = '';
- 
-  
+  repeatPassword: string = '';
+  terms: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

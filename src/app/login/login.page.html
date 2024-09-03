@@ -1,24 +1,47 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Login</ion-title>
+    <ion-button class="back" [routerLink]="['/']">Volver</ion-button>
+    <ion-title>Prueba</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-
-  <ion-input
-  type="email"
-  fill="solid"
-  label="Email"
-  labelPlacement="floating"
-  helperText="Enter a valid email"
-  errorText="Invalid email"
-  ngModel
-  email
-></ion-input>
-
-
+<ion-content class="background-image" [fullscreen]="true">
+  <!--formulario Registro-->
+  <form action="registerform">
+    <ion-list>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="email"
+          fill="solid"
+          label="Email"
+          labelPlacement="floating"
+          helperText="Ingrese un correo válido"
+          errorText="Correo inválido"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="password"
+          fill="solid"
+          label="Contraseña"
+          labelPlacement="floating"
+          helperText="Ingrese contraseña"
+          errorText="Contraseña inválida"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      
+      <ion-button class="iniciar">Iniciar Sesión</ion-button>
+    </ion-list>
+  </form>
 </ion-content>
+
+
+
+

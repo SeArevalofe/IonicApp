@@ -1,20 +1,104 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Main</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true"> 
+    <ion-toolbar>
+        <div class="ion-page" id="main-content">
+            <ion-header>
+              <ion-toolbar>
+                <ion-button [routerLink]="['/prueba']" class="drk"slot="end">Sesion</ion-button>
+                <ion-buttons slot="start">
+                  <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Inicio</ion-title>
+              </ion-toolbar>
+            </ion-header>
+            <ion-searchbar></ion-searchbar>
+            <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+          </div>
+      </ion-toolbar>
+     
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Main</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-button [routerLink]="['/product-list']">ProductList</ion-button>
+<ion-content class="background-image" [fullscreen]="true">
+  <!--CARDS-->
+  <div class="container">
+    <ion-card class="small-card">
+        <img alt="Silhouette of mountains" src="/assets/img/libros/libro1.jfif"/>
+        <ion-card-header>
+          <ion-card-title>Metamorfosis</ion-card-title>
+          <ion-card-subtitle>Autor:frank kafka</ion-card-subtitle>
+        </ion-card-header>
+      
+      </ion-card>
+  </div>
+  <!--cards-->
+  <div class="container">
+    <ion-card class="small-card">
+        <img alt="Silhouette of mountains" src="/assets/img/libros/libro2.jfif"/>
+        <ion-card-header>
+          <ion-card-title>El extrajero</ion-card-title>
+          <ion-card-subtitle>Autor:Albert camus</ion-card-subtitle>
+        </ion-card-header>
+      
+      </ion-card>
+  </div>
+  <!--cards-->
+  <div class="container">
+    <ion-card class="small-card">
+        <img alt="Silhouette of mountains" src="/assets/img/libros/libro3.jfif"/>
+        <ion-card-header>
+          <ion-card-title>El retrato de Dorian Grey</ion-card-title>
+          <ion-card-subtitle>Autor:Oscar Wilde</ion-card-subtitle>
+        </ion-card-header>
+      
+      </ion-card>
+  </div>
+<!--cards-->
+<div class="container">
+  <ion-card class="small-card">
+      <img alt="Silhouette of mountains" src="/assets/img/libros/libro4.jfif"/>
+      <ion-card-header>
+        <ion-card-title>Rebelion en la granja</ion-card-title>
+        <ion-card-subtitle>Autor:George Orwell</ion-card-subtitle>
+      </ion-card-header>
+    
+    </ion-card>
+</div>
+<!--card-->
+<div class="container">
+  <ion-card class="small-card">
+      <img alt="Silhouette of mountains" src="/assets/img/libros/libro 5.jfif"/>
+      <ion-card-header>
+        <ion-card-title>Noches blancas</ion-card-title>
+        <ion-card-subtitle>Autor:Fiódor Mijáilovich Dostoyevski</ion-card-subtitle>
+      </ion-card-header>
+    
+    </ion-card>
+</div>
+<ion-button src="/assets/img/iconos/icono1.png" class="archivo">Subir</ion-button>
 
-  <ion-button [routerLink]="['/login']">Login</ion-button>
 
 </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

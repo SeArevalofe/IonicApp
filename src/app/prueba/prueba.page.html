@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button class="back" [routerLink]="['/']">Volver</ion-button>
+    <ion-title>Prueba</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image" [fullscreen]="true">
+  <!--formulario Registro-->
+  <form action="registerform">
+    <ion-list>
+      <ion-item>
+        <ion-input
+          type="text"
+          fill="solid"
+          label="Nombre"
+          labelPlacement="floating"
+          helperText="Ingrese su nombre"
+          errorText="Debe ingresar un carácter válido"
+          [(ngModel)]="nombre"
+          name="nombre"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="text"
+          fill="solid"
+          label="Apellido"
+          labelPlacement="floating"
+          helperText="Ingrese su apellido"
+          errorText="Debe ingresar un carácter válido"
+          [(ngModel)]="apellido"
+          name="apellido"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="email"
+          fill="solid"
+          label="Email"
+          labelPlacement="floating"
+          helperText="Ingrese un correo válido"
+          errorText="Correo inválido"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="password"
+          fill="solid"
+          label="Contraseña"
+          labelPlacement="floating"
+          helperText="Ingrese contraseña"
+          errorText="Contraseña inválida"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <!--separación items-->
+      <ion-item>
+        <ion-input
+          type="password"
+          fill="solid"
+          label="Repetir Contraseña"
+          labelPlacement="floating"
+          helperText="Repita la contraseña"
+          errorText="Las contraseñas no coinciden"
+          [(ngModel)]="repeatPassword"
+          name="repeatPassword"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox>Hel leido los terminos y condiciones</ion-checkbox>
+      </ion-item>
+      <ion-button type="submit" class="custom-hover">Registrarse</ion-button>
+      <ion-button [routerLink]="['/login']" class="iniciar">Iniciar Sesión</ion-button>
+    </ion-list>
+  </form>
+</ion-content>
+
